@@ -1,0 +1,158 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&display=swap');
+
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Baloo Bhai 2", serif;
+}
+
+
+body{
+    background: linear-gradient(135deg,#d60d0d00,#41964cc0);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    color: #333;
+    min-height: 100vh;
+    padding: 10px;
+}
+
+
+.container{
+    background-color: #fff;
+    padding: 25px 35px;
+    border-radius: 12px;
+    max-width: 600px;
+    box-shadow: 0px 6px 12px rgba(0,0,0,0.15);
+    text-align: center;
+    box-shadow: 5px 5px 5px;
+}
+
+
+h1{
+    font-size: 40px;
+    color: #4e73df;
+    margin-bottom: 25px;
+}
+
+
+.search-box{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+
+#city-input{
+    flex: 1;
+    padding: 12px;
+    border:2px solid #4e73df;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+
+#get-weather-btn{
+    padding: 12px 15px;
+    background-color: #1cc88a;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+
+#get-weather-btn:hover{
+    background-color: #17a673;
+}
+
+
+.weather-info{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+
+#weather-icon{
+    width: 80px;
+    height: 80px;
+    margin: 15px auto;
+    display: block;
+}
+
+
+#temperature{
+    font-size: 40px;
+    margin: 15px 0;
+    color: #4e73df;
+}
+
+
+#description{
+    font-size: 80px;
+    font-style: italic;
+    margin-bottom: 15px;
+    color: #6c775d;
+}
+
+.details{
+    display:flex;
+    justify-content: space-between;
+    font-size: 16px;
+    gap:15px;
+    flex-wrap: nowrap;
+}
+
+.details div{
+    flex-grow: 1;
+    text-align: center;
+    background-color: #f0faf8;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+    margin: 5px;
+}
+
+
+@media(max-width: 768px){
+    .container{
+        padding: 20px 25px;
+    }
+    H1{
+        font-size: 20px;
+    }
+    #temperature{
+        font-size: 36px;
+    }
+    .search-box{
+        flex-direction: column;
+        gap: 5px;
+    }
+    #get-weather-btn{
+        width: 100%;
+        padding: 12px;
+    }
+
+    .details{
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .details div{
+        width: 100%;
+    }
+
+}
+
+
+
